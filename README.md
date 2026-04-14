@@ -466,7 +466,6 @@ This project is licensed under the **MIT License** — see [LICENSE](LICENSE) fi
 **Gorav Gumber**
 
 - GitHub: [@goravgumber](https://github.com/goravgumber)
-- Website: [Portfolio](#)
 
 ---
 
@@ -484,7 +483,7 @@ For issues, feature requests, or questions:
 
 - 🐛 [Open an Issue](https://github.com/goravgumber/ai_ops_assistant/issues)
 - 💬 [Start a Discussion](https://github.com/goravgumber/ai_ops_assistant/discussions)
-- 📧 Email: [your-email@example.com](mailto:goravgumberg@example.com)
+- 📧 Email: [goravgumberg@gmail.com](mailto:goravgumberg@example.com)
 
 ---
 
