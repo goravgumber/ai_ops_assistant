@@ -484,7 +484,7 @@ For issues, feature requests, or questions:
 
 - 🐛 [Open an Issue](https://github.com/goravgumber/ai_ops_assistant/issues)
 - 💬 [Start a Discussion](https://github.com/goravgumber/ai_ops_assistant/discussions)
-- 📧 Email: [your-email@example.com](mailto:your-email@example.com)
+- 📧 Email: [your-email@example.com](mailto:goravgumberg@example.com)
 
 ---
 
