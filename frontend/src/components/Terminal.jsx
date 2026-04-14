@@ -7,6 +7,7 @@ import AgentCommands from './AgentCommands'
 import SessionInfo from './SessionInfo'
 import CommandPalette from './CommandPalette'
 import { useCommands } from '../hooks/useCommands'
+import { API_BASE } from '../services/api'
 
 function LoadingDots() {
   return (
@@ -61,7 +62,7 @@ export default function Terminal() {
   }, [addMessage])
 
   useEffect(() => {
-    fetch('http://localhost:8000/health')
+    fetch(`${API_BASE}/health`)
       .then((r) => r.json())
       .then((data) => {
         addMessage({
@@ -72,7 +73,7 @@ export default function Terminal() {
       .catch(() => {
         addMessage({
           type: 'error',
-          content: 'Backend not connected. Start api_server.py first.',
+          content: 'Backend not connected. Check your Railway API URL.',
         })
       })
   }, [addMessage])

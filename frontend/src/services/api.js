@@ -1,4 +1,4 @@
-export const API_BASE = 'aiopsassistant-production.up.railway.app'
+export const API_BASE = import.meta.env.VITE_API_URL || 'http://localhost:8000'
 
 async function request(path, options = {}) {
   try {
@@ -54,7 +54,7 @@ export async function runVerifierOnly(plan, results) {
 }
 
 export async function streamTask(task, options = {}, onEvent = () => {}) {
-  const response = await fetch('http://localhost:8000/task/stream', {
+  const response = await fetch(`${API_BASE}/task/stream`, {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({
