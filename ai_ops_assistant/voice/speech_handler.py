@@ -49,9 +49,9 @@ class SpeechHandler:
             if sr is None:
                 raise ImportError("speech_recognition is not installed")
             if pyttsx3 is None:
-                raise ImportError("pyttsx3 is not installed")
+                raise ImportError("pyttsx3 is not installed (voice features disabled in this environment)")
             if pyaudio is None:
-                raise ImportError("pyaudio is not installed")
+                raise ImportError("pyaudio is not installed (voice features disabled in this environment)")
 
             self.recognizer = sr.Recognizer()
             self.engine = pyttsx3.init()
@@ -72,13 +72,10 @@ class SpeechHandler:
             self.available = True
             print("🎤 Voice assistant initialized")
         except ImportError as exc:
-            print(f"Warning: Voice dependencies missing: {exc}")
-            print("Install pyaudio for voice support: pip install pyaudio")
+            print(f"ℹ️  Voice features disabled: {exc}")
             self.available = False
         except Exception as exc:
             print(f"Warning: Voice assistant initialization failed: {exc}")
-            if "pyaudio" in str(exc).lower() or "portaudio" in str(exc).lower():
-                print("Install pyaudio for voice support: pip install pyaudio")
             self.available = False
 
     def _set_english_voice(self) -> None:
