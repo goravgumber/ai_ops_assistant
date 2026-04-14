@@ -1,0 +1,99 @@
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual Environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python build files
+build/
+dist/
+*.egg-info/
+.eggs/
+
+# =========================
+# Environment Variables
+# =========================
+.env
+.env.*
+!.env.example
+
+# =========================
+# Logs & Runtime Files
+# =========================
+logs/
+*.log
+*.out
+*.err
+
+# =========================
+# Cache
+# =========================
+.cache/
+.pytest_cache/
+.mypy_cache/
+
+# =========================
+# VS Code / IDE
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# Node / Frontend (Vite/React)
+# =========================
+node_modules/
+frontend/node_modules/
+
+# Build outputs
+dist/
+frontend/dist/
+
+# Vite cache
+.vite/
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+
+# =========================
+# Coverage & Testing
+# =========================
+coverage/
+htmlcov/
+*.coverage
+
+# =========================
+# Temporary Files
+# =========================
+*.tmp
+*.temp
+
+# =========================
+# Secrets (IMPORTANT)
+# =========================
+*.pem
+*.key
+*.crt
+
+# =========================
+# Database (if added later)
+# =========================
+*.sqlite3
+*.db
+
+# =========================
+# Misc
+# =========================
+frontend.log
+start.sh
