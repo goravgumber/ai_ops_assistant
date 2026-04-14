@@ -4,6 +4,6 @@
     "builder": "NIXPACKS"
   },
   "deploy": {
-    "startCommand": "uvicorn ai_ops_assistant.api_server:app --host 0.0.0.0 --port $PORT"
+    "startCommand": "uvicorn ai_ops_assistant.api_server:app --host 0.0.0.0 --port $PORT --workers 1"
   }
 }
