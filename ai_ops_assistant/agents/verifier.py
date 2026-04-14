@@ -6,7 +6,7 @@ import json
 from datetime import datetime
 from typing import Any
 
-from llm.client import cost_tracker, llm_client
+from ai_ops_assistant.llm.client import cost_tracker, llm_client
 
 
 class VerifierAgent:

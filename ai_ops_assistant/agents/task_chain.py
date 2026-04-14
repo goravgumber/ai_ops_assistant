@@ -7,11 +7,11 @@ import re
 import time
 from typing import Any, Callable
 
-from agents.executor import executor_agent
-from agents.memory_agent import memory_agent
-from agents.planner import planner_agent
-from agents.verifier import verifier_agent
-from llm.client import cost_tracker, llm_client
+from ai_ops_assistant.agents.executor import executor_agent
+from ai_ops_assistant.agents.memory_agent import memory_agent
+from ai_ops_assistant.agents.planner import planner_agent
+from ai_ops_assistant.agents.verifier import verifier_agent
+from ai_ops_assistant.llm.client import cost_tracker, llm_client
 
 
 class TaskChainProcessor:

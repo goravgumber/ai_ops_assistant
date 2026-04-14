@@ -6,8 +6,8 @@ import json
 import re
 from typing import Any
 
-from cache.cache_manager import cache_manager
-from llm.client import cost_tracker, llm_client
+from ai_ops_assistant.cache.cache_manager import cache_manager
+from ai_ops_assistant.llm.client import cost_tracker, llm_client
 
 
 class PlannerAgent:

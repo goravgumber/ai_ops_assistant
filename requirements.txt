@@ -1,5 +1,12 @@
-fastapi
-uvicorn
 openai
 requests
+fastapi
+uvicorn
 python-dotenv
+speechrecognition
+pyttsx3
+rich
+cachetools
+tiktoken
+pydantic
+pyaudio

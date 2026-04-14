@@ -8,12 +8,12 @@ import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from typing import Any
 
-from cache.cache_manager import cache_manager
-from llm.client import cost_tracker, llm_client
-from tools.github_tool import github_tool
-from tools.news_tool import news_tool
-from tools.web_search_tool import web_search_tool
-from tools.weather_tool import weather_tool
+from ai_ops_assistant.cache.cache_manager import cache_manager
+from ai_ops_assistant.llm.client import cost_tracker, llm_client
+from ai_ops_assistant.tools.github_tool import github_tool
+from ai_ops_assistant.tools.news_tool import news_tool
+from ai_ops_assistant.tools.web_search_tool import web_search_tool
+from ai_ops_assistant.tools.weather_tool import weather_tool
 
 
 class ExecutorAgent:

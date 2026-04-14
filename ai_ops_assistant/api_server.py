@@ -21,13 +21,13 @@ from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import HTMLResponse, JSONResponse, StreamingResponse
 from pydantic import BaseModel
 
-from agents.executor import executor_agent
-from agents.memory_agent import memory_agent
-from agents.planner import planner_agent
-from agents.task_chain import task_chain_processor
-from agents.verifier import verifier_agent
-from cache.cache_manager import cache_manager
-from llm.client import cost_tracker
+from ai_ops_assistant.agents.executor import executor_agent
+from ai_ops_assistant.agents.memory_agent import memory_agent
+from ai_ops_assistant.agents.planner import planner_agent
+from ai_ops_assistant.agents.task_chain import task_chain_processor
+from ai_ops_assistant.agents.verifier import verifier_agent
+from ai_ops_assistant.cache.cache_manager import cache_manager
+from ai_ops_assistant.llm.client import cost_tracker
 
 
 class TaskRequest(BaseModel):

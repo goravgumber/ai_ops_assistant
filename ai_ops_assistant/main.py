@@ -15,15 +15,15 @@ import time
 from datetime import datetime
 from typing import Any
 
-from agents.executor import executor_agent
-from agents.memory_agent import memory_agent
-from agents.planner import planner_agent
-from agents.task_chain import task_chain_processor
-from agents.verifier import verifier_agent
-from cache.cache_manager import cache_manager
-from llm.client import cost_tracker
-from ui.terminal_ui import terminal_ui
-from voice.speech_handler import speech_handler
+from ai_ops_assistant.agents.executor import executor_agent
+from ai_ops_assistant.agents.memory_agent import memory_agent
+from ai_ops_assistant.agents.planner import planner_agent
+from ai_ops_assistant.agents.task_chain import task_chain_processor
+from ai_ops_assistant.agents.verifier import verifier_agent
+from ai_ops_assistant.cache.cache_manager import cache_manager
+from ai_ops_assistant.llm.client import cost_tracker
+from ai_ops_assistant.ui.terminal_ui import terminal_ui
+from ai_ops_assistant.voice.speech_handler import speech_handler
 
 
 class AIOperationsAssistant:
