@@ -1,1 +1,1 @@
-web: uvicorn api_server:app --host 0.0.0.0 --port $PORT
+web: uvicorn ai_ops_assistant.api_server:app --host 0.0.0.0 --port $PORT
