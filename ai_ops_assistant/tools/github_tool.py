@@ -3,7 +3,7 @@
 from __future__ import annotations
 
 import os
-from datetime import UTC, datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 import requests
 from dotenv import load_dotenv
@@ -74,7 +74,7 @@ class GitHubTool:
             A list of normalized repository dictionaries.
         """
         try:
-            seven_days_ago = (datetime.now(UTC) - timedelta(days=7)).date().isoformat()
+            seven_days_ago = (datetime.now(timezone.utc) - timedelta(days=7)).date().isoformat()
             query = f"language:{language} created:>{seven_days_ago}"
             return self.search_repos(query=query, sort="stars", limit=limit)
         except Exception as exc:

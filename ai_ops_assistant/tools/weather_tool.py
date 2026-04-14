@@ -4,7 +4,7 @@ from __future__ import annotations
 
 import os
 from collections import Counter, defaultdict
-from datetime import UTC, datetime
+from datetime import datetime, timezone
 from typing import Any
 
 import requests
@@ -168,7 +168,7 @@ class WeatherTool:
         if timestamp is None:
             return ""
         shifted = int(timestamp) + tz_offset_seconds
-        return datetime.fromtimestamp(shifted, tz=UTC).strftime("%H:%M")
+        return datetime.fromtimestamp(shifted, tz=timezone.utc).strftime("%H:%M")
 
 
 weather_tool = WeatherTool()
