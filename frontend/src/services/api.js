@@ -1,4 +1,4 @@
-export const API_BASE = 'https://aiopsassistant-production.up.railway.app/'
+export const API_BASE = 'aiopsassistant-production.up.railway.app'
 
 async function request(path, options = {}) {
   try {
